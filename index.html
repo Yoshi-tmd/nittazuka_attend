@@ -12,10 +12,14 @@
 <body>
     <div id="wrapper">
         <header id="header">
-            <h1>PCN にったづか クラブ しゅっせきひょう</h1>
+            <h1>PCN にったづか クラブ<br>しゅっせきひょう</h1>
         </header>
         <!-- /#header -->
         <div id="main">
+            <div id="date">
+                <input type="date" id="club-date">
+            </div>
+            <!-- /#club-date -->
             <section>おなかすいたー</section>
             <section>おなかすいたー</section>
             <section>おなかすいたー</section>
@@ -32,5 +36,32 @@
         <!-- /#footer -->
     </div>
     <!-- /#wrapper -->
+    <script type="text/javascript">
+        // 今日の日付を表示
+            window.onload = function(){
+                // 今日の日時を取得
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                var day = date.getDate();
+
+                // 月と日を2桁表示にする処理
+                var toTwoDigits = function(num, digit){
+                    num += '';
+                    if (num.length < digit){
+                        num = '0' + num;
+                    }
+                    return num;
+                }
+
+                var yyyy = toTwoDigits(year, 4);
+                var mm = toTwoDigits(month, 2);
+                var dd = toTwoDigits(day, 2);
+                var ymd = yyyy + "-" + mm + "-" + dd;
+
+                document.getElementById("club-date").value = ymd;
+            }
+
+    </script>
 </body>
 </html>
