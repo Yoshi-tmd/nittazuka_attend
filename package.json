@@ -1,7 +1,7 @@
 {
   "name": "nittazuka_attend",
-  "version": "1.0.0",
-  "description": "### ◆メモ - クラブの出席管理アプリを作りたい   - python   flask   bootstrap",
+  "version": "0.8.0",
+  "description": "クラブの出席管理アプリ",
   "main": "index.js",
   "scripts": {
     "start": "electron ./src",
