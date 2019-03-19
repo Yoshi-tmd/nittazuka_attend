@@ -1,0 +1,24 @@
+{
+  "name": "nittazuka_attend",
+  "version": "1.0.0",
+  "description": "### ◆メモ - クラブの出席管理アプリを作りたい   - python   flask   bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./src",
+    "build-macOS": "electron-packager ./src NTZK-app --platform=darwin --arch=x64 --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoshi-tmd/nittazuka_attend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoshi-tmd/nittazuka_attend/issues"
+  },
+  "homepage": "https://github.com/Yoshi-tmd/nittazuka_attend#readme",
+  "devDependencies": {
+    "electron": "^4.1.0"
+  }
+}
