@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" />
+    <title>PCN新田塚クラブ-基礎コース出席表</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <h1>PCN にったづか クラブ<br>しゅっせきひょう</h1>
+        </header>
+        <!-- /#header -->
+        <div id="main">
+            <div id="date">
+                <input type="date" id="club-date">
+            </div>
+            <!-- /#club-date -->
+            <div id="course-select">
+                <ul>
+                    <li class="basicCourse selected"><a href="">きそ コース</a></li>
+                    <li class="applicationCourse"><a href="./application_course.html">おうよう コース</a></li>
+                </ul>
+            </div>
+            <!-- /#course-select -->
+            <div id="formarea" data-course="basic">
+                <table class="basicTable">
+                    <tr id="radio01">
+                        <th class="kidsname">いべ あやと</th>
+                        <td><input type="radio" name="radio01" class="radio-input" id="radio01-attend" value="attend">
+                        <label for="radio01-attend">出席</label></td>
+                        <td><input type="radio" name="radio01" class="radio-input" id="radio01-absence" value="absence" checked>
+                        <label for="radio01-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio02">
+                        <th class="kidsname">おかだ しょうへい</th>
+                        <td><input type="radio" name="radio02" class="radio-input" id="radio02-attend" value="attend">
+                        <label for="radio02-attend">出席</label></td>
+                        <td><input type="radio" name="radio02" class="radio-input" id="radio02-absence" value="absence" checked>
+                        <label for="radio02-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio03">
+                        <th class="kidsname">のじ ゆりか</th>
+                        <td><input type="radio" name="radio03" class="radio-input" id="radio03-attend" value="attend">
+                        <label for="radio03-attend">出席</label></td>
+                        <td><input type="radio" name="radio03" class="radio-input" id="radio03-absence" value="absence" checked>
+                        <label for="radio03-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio04">
+                        <th class="kidsname">ふじもと あやと</th>
+                        <td><input type="radio" name="radio04" class="radio-input" id="radio04-attend" value="attend">
+                        <label for="radio04-attend">出席</label></td>
+                        <td><input type="radio" name="radio04" class="radio-input" id="radio04-absence" value="absence" checked>
+                        <label for="radio04-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio05">
+                        <th class="kidsname">たじま みどり</th>
+                        <td><input type="radio" name="radio05" class="radio-input" id="radio05-attend" value="attend">
+                        <label for="radio05-attend">出席</label></td>
+                        <td><input type="radio" name="radio05" class="radio-input" id="radio05-absence" value="absence" checked>
+                        <label for="radio05-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio06">
+                        <th class="kidsname">わたなべ いつき</th>
+                        <td><input type="radio" name="radio06" class="radio-input" id="radio06-attend" value="attend">
+                        <label for="radio06-attend">出席</label></td>
+                        <td><input type="radio" name="radio06" class="radio-input" id="radio06-absence" value="absence" checked>
+                        <label for="radio06-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio07">
+                        <th class="kidsname">たけたに せな</th>
+                        <td><input type="radio" name="radio07" class="radio-input" id="radio07-attend" value="attend">
+                        <label for="radio07-attend">出席</label></td>
+                        <td><input type="radio" name="radio07" class="radio-input" id="radio07-absence" value="absence" checked>
+                        <label for="radio07-absence">お休み</label></td>
+                    </tr>
+                    <tr id="radio08">
+                        <th class="kidsname">さわもと りく</th>
+                        <td><input type="radio" name="radio08" class="radio-input" id="radio08-attend" value="attend">
+                        <label for="radio08-attend">出席</label></td>
+                        <td><input type="radio" name="radio08" class="radio-input" id="radio08-absence" value="" checked>
+                        <label for="radio08-absence">お休み</label></td>
+                    </tr>
+    
+                </table>
+                <br/>
+                <input type="submit" value="決定" class="submit basicSubmit" onclick="showValue();">
+                <div id="resultArea">
+                    <p>本日の出席人数　<span id="resultNum">0</span>人</p>
+                    <p>合計金額　<span id="resultAmount">0</span>円</p>
+                </div>
+            </div>
+        </div>
+        <!-- /#main -->
+        <footer>
+            <small>Copyright&nbsp;&copy;&nbsp;2019&nbsp;YT.&nbsp;All rights reserved.</small>
+        </footer>
+        <!-- /#footer -->
+    </div>
+    <!-- /#wrapper -->
+    <script type="text/javascript" src="./script/mainscript.js"></script>
+</body>
+</html>
