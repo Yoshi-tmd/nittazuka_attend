@@ -25,10 +25,13 @@ window.onload = function(){
     document.getElementById("club-date").value = ymd;
 }
 
+// 出席人数と金額の算出
+// コースの定義
 const course = document.getElementById('formarea');
 console.log(course.dataset.course);
 let unitPrice;
 
+// 単価の設定
 if(course.dataset.course == 'basic'){
     unitPrice = 200;
 } else {
@@ -36,6 +39,7 @@ if(course.dataset.course == 'basic'){
 }
 console.log(unitPrice);
 
+// 決定ボタンを押したときのイベント関数
 function showValue(){
     let menNum = 8;
     let count = 0;
@@ -50,12 +54,14 @@ function showValue(){
             count++;
         }
     }
+
+    // 人数をHTMLに挿入
     console.log(count);
     document.getElementById('resultNum').innerHTML = count;
 
+    // 合計金額を算出、HTMLに挿入
     total = count * unitPrice;
-    if(total){
-        document.getElementById('resultAmount').innerHTML = total;
-    }
+    document.getElementById('resultAmount').innerHTML = total;
+
 }
 
