@@ -23,6 +23,7 @@ window.onload = function(){
     var ymd = yyyy + "-" + mm + "-" + dd;
 
     document.getElementById("club-date").value = ymd;
+    console.log(ymd);
 }
 
 // 出席人数と金額の算出
