@@ -18,7 +18,7 @@ function sumChargeDB(){
         showDbCount();
     });
     function showDbCount() {
-        console.log(x); // x have docs now
+        // console.log(x); // x have docs now
         console.log("DB num is " + x.length); // x have docs now
         sumCharge(x.length);
     }
