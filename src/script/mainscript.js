@@ -40,10 +40,13 @@ if(course.dataset.course == 'basic'){
 }
 console.log(unitPrice);
 
+// 人数と金額の変数宣言
+let count = 0;
+let total = 0;
+
 // 決定ボタンを押したときのイベント関数
 function showValue(){
     let menNum = 8;
-    let count = 0;
 
     for (let i = 1; i <= menNum; i++){
         let str = 'radio0' + i + '-attend';
@@ -64,4 +67,17 @@ function showValue(){
     total = count * unitPrice;
     document.getElementById('resultAmount').innerHTML = total;
 
+    return count, total;
+}
+
+// 確定ボタン押したときのイベント
+function confirmFunc(){
+    let act = confirm('確認です\nokoko?');
+    if (act) {
+        console.log('ok');
+        console.log(count);
+        console.log(total);
+    } else {
+        console.log('nono');
+    }
 }
