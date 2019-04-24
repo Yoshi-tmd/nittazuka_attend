@@ -65,4 +65,3 @@ function showValue(){
     document.getElementById('resultAmount').innerHTML = total;
 
 }
-

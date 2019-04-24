@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" />
+    <title>PCN新田塚クラブ-家計簿</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <h1>PCN にったづか クラブ<br>かけいぼ</h1>
+        </header>
+        <!-- /#header -->
+        <div id="main">
+            
+            <p>入出金を記録する</p>
+
+            <form name="mainForm">
+                <div>
+                    <h3>日付</h3>
+                    <input name="date" type="date" value="" id="date"/>
+                </div>
+                <div>
+                    <h3>入出金</h3><label for=""></label>
+                    <input name="state" type="radio" value="reception" id="state_rec" checked> <label for="state_rec">入金</label>
+                    <input name="state" type="radio" value="payment" id="state_pay"/> <label for="state_pay">出金</label>
+                </div>
+                <div>
+                    <h3>金額</h3>
+                    <input name="charge" type="text" value="" />
+                </div>
+                <div>
+                    <h3>補足</h3>
+                    <textarea name="notes" value=""></textarea>
+                </div>
+                <button onclick="getFormValue();">確定</button>
+            </form>
+
+        </div>
+        <!-- /#main -->
+        <footer>
+            <small>Copyright&nbsp;&copy;&nbsp;2019&nbsp;YT.&nbsp;All rights reserved.</small>
+        </footer>
+        <!-- /#footer -->
+    </div>
+    <!-- /#wrapper -->
+    <script type="text/javascript" src="./script/balancescript.js"></script>
+</body>
+</html>

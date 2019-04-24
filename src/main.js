@@ -10,6 +10,7 @@ function createWindow() {
  
   // メインウィンドウに表示するURLを指定します
   // （今回はmain.jsと同じディレクトリのindex.html）
+  // mainWindow.loadFile('balance_form.html');
   mainWindow.loadFile('basic_course.html');
  
   // デベロッパーツールの起動
