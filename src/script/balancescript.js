@@ -40,11 +40,11 @@ window.onload = function(){
     }
 
     //charge
-    form.charge.value = 3200;
+    form.charge.value = 0;
     console.log(form.charge.value);
 
     //note
-    form.notes.value = "とりあえずとりあえず";
+    form.notes.value = "";
     console.log(form.notes.value);
 
 }
