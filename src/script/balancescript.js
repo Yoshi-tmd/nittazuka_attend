@@ -83,12 +83,12 @@ function getFormValue(){
 
     //charge
     console.log(form.charge.value);
-    alert(form.charge.value);
     var insertCharge = Number(form.charge.value);
     // paymentだったらマイナスつける
     if(insertState == 'payment'){
         insertCharge *= -1;
     }
+    alert(form.charge.value);
 
     //note
     console.log(form.notes.value);
