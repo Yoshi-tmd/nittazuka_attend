@@ -1,6 +1,7 @@
 // mainscript.js
 
 // 今日の日付を表示
+var ymd;
 window.onload = function(){
     // 今日の日時を取得
     var date = new Date();
@@ -20,10 +21,11 @@ window.onload = function(){
     var yyyy = toTwoDigits(year, 4);
     var mm = toTwoDigits(month, 2);
     var dd = toTwoDigits(day, 2);
-    var ymd = yyyy + "-" + mm + "-" + dd;
+    ymd = yyyy + "-" + mm + "-" + dd;
 
     document.getElementById("club-date").value = ymd;
     console.log(ymd);
+    return ymd;
 }
 
 // 出席人数と金額の算出
@@ -47,6 +49,10 @@ let total = 0;
 // 決定ボタンを押したときのイベント関数
 function showValue(){
     let menNum = 8;
+
+    if(count!=0){
+        count = 0;
+    }
 
     for (let i = 1; i <= menNum; i++){
         let str = 'radio0' + i + '-attend';
@@ -74,9 +80,9 @@ function showValue(){
 function confirmFunc(){
     let act = confirm('確認です\nokoko?');
     if (act) {
-        console.log('ok');
         console.log(count);
         console.log(total);
+        console.log(ymd);
     } else {
         console.log('nono');
     }
