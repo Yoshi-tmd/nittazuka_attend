@@ -8,7 +8,9 @@
 {"id":1003,"day":"2019-04-24","state":"payment","charge":"3200","notes":"とりあえずとりあえず","_id":"Fj8edczPMKSEmNCy"}
 {"id":1005,"day":"2019-04-24","state":"reseption","charge":"3200","notes":"とりあえずとりあえず","_id":"R8ohJPBpUG6SR0AE"}
 {"id":1014,"day":"2019-05-07","state":"payment","charge":-2400,"notes":"4月家賃","_id":"TeLy6JMB8At8p7EH"}
+{"id":1016,"day":"2018-05-27","state":"reseption","charge":2800,"notes":"","_id":"bbMXZstV7VuIpYOZ"}
 {"id":1012,"day":"2019-04-24","state":"payment","charge":-3200,"notes":"","_id":"j2H9FIzozw4qqGTt"}
+{"id":1015,"day":"2019-05-14","state":"reseption","charge":2900,"notes":"","_id":"rq6mxuMXJ3w6y2lB"}
 {"id":1004,"day":"2019-04-24","state":"reseption","charge":"3200","notes":"とりあえずとりあえず","_id":"vRdUvClz3ictBIEG"}
 {"id":1002,"day":"2019-04-24","charge":"1245","notes":"筆記用具","_id":"vgiAMiLCVNOUbxaA"}
 {"id":1007,"day":"2019-04-24","state":"reseption","charge":3200,"notes":"とりあえずとりあえず","_id":"yaaljvYIzVdBU2jb"}
