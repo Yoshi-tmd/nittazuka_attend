@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Yoshi-tmd/nittazuka_attend#readme",
   "devDependencies": {
-    "electron": "^4.1.0",
+    "electron": "^15.5.5",
     "nedb": "^1.8.0"
   },
   "dependencies": {}
